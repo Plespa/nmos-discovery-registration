@@ -18,7 +18,6 @@ schemas:
     Flows: !include schemas/flows.json
     Sender: !include schemas/sender.json
     Senders: !include schemas/senders.json
-    SenderTarget: !include schemas/sender-target.json
     Receiver: !include schemas/receiver.json
     Receivers: !include schemas/receivers.json
 traits:
@@ -226,14 +225,14 @@ documentation:
           description: Returned when the requested Receiver ID does not exist
     /target:
       put:
-        description: Request a change to a Receiver's subscription
+        description: Request a change to a Receiver's subscription (deprecated in v1.2)
         body:
           example: !include ../examples/nodeapi-v1.1-receivertarget-put-request.json
         responses:
           202:
             body:
               example: !include ../examples/nodeapi-v1.1-receivertarget-put-200.json
-              schema: SenderTarget
+              schema: Senders
           400:
             description: Returned when the PUT request is incorrectly formatted or missing mandatory attributes
           404:

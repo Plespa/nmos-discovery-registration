@@ -41,6 +41,16 @@
                 "gmid": "08-00-11-ff-fe-21-e1-b0",
                 "locked": true
             }
+        ],
+        "interfaces" : [
+          {
+            "name":"eth0",
+            "mac_address":"74:26:96:db:87:31"
+          },
+          {
+            "name":"eth1",
+            "mac_address":"74:26:96:db:87:32"
+          }
         ]
     },
     {
@@ -85,6 +95,16 @@
                 "gmid": "08-00-11-ff-fe-21-e1-b0",
                 "locked": true
             }
+        ],
+        "interfaces" : [
+          {
+            "name":"en0",
+            "mac_address":"a4:26:84:db:58:31"
+          },
+          {
+            "name":"en1",
+            "mac_address":"a4:26:84:db:58:32"
+          }
         ]
     }
 ]

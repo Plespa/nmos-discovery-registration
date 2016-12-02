@@ -44,5 +44,15 @@
             "gmid": "08-00-11-ff-fe-21-e1-b0",
             "locked": true
         }
+    ],
+    "interfaces" : [
+      {
+        "name":"eth0",
+        "mac_address":"74:26:96:db:87:31"
+      },
+      {
+        "name":"eth1",
+        "mac_address":"74:26:96:db:87:32"
+      }
     ]
 }

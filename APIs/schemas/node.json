@@ -12,7 +12,8 @@
         "caps",
         "api",
         "services",
-        "clocks"
+        "clocks",
+        "interfaces"
       ],
       "properties": {
         "href": {
@@ -102,6 +103,24 @@
               { "$ref": "clock_internal.json" },
               { "$ref": "clock_ptp.json" }
             ]
+          }
+        },
+        "interfaces": {
+          "description":"Network interfaces made available to devices owned by this Node",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "mac_address": {
+                "description": "MAC address of the interface (unique in scope of LAN segment)",
+                "type": "string",
+                "pattern": "^[0-9a-f]{2}-[0-9a-f]{2}-[0-9a-f]{2}-[0-9a-f]{2}-[0-9a-f]{2}-[0-9a-f]{2}$"
+              },
+              "name": {
+                "description": "Name of the interface (unique in scope of this node)",
+                "type": "string"
+              }
+            }
           }
         }
       }
