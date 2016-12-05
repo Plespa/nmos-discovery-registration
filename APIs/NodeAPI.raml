@@ -219,7 +219,7 @@ documentation:
       responses:
         200:
           body:
-            example: !include ../examples/nodeapi-v1.1-receiverid-get-200.json
+            example: !include ../examples/nodeapi-v1.1-senderid-get-200.json
             schema: Receiver
         404:
           description: Returned when the requested Receiver ID does not exist
@@ -227,12 +227,12 @@ documentation:
       put:
         description: Request a change to a Receiver's subscription (deprecated in v1.2)
         body:
-          example: !include ../examples/nodeapi-v1.1-receivertarget-put-request.json
+          example: !include ../examples/nodeapi-v1.1-senderid-get-200.json
         responses:
           202:
             body:
-              example: !include ../examples/nodeapi-v1.1-receivertarget-put-200.json
-              schema: Senders
+              example: !include ../examples/nodeapi-v1.1-senderid-get-200.json
+              schema: Sender
           400:
             description: Returned when the PUT request is incorrectly formatted or missing mandatory attributes
           404:

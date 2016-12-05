@@ -114,7 +114,7 @@
               "mac_address": {
                 "description": "MAC address of the interface (unique in scope of LAN segment)",
                 "type": "string",
-                "pattern": "^[0-9a-f]{2}-[0-9a-f]{2}-[0-9a-f]{2}-[0-9a-f]{2}-[0-9a-f]{2}-[0-9a-f]{2}$"
+                "pattern": "^[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}$"
               },
               "name": {
                 "description": "Name of the interface (unique in scope of this node)",
