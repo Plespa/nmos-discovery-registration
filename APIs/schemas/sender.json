@@ -58,7 +58,7 @@
           "format": "uri"
         },
         "interface_bindings": {
-          "description": "binding of sender egress ports to interfaces on the parent Node",
+          "description": "binding of sender egress ports to interfaces on the parent Node (TBD 2022-7)",
           "type": "array",
           "items": {
             "type":"string"
